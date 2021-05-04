@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/Home.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!--<link rel="stylesheet" href="./styles.css">-->
+    <!--<link rel="stylesheet" href="./styles2.css">-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <title>CCME</title>
+    <!-- Favicon
+    <link href="dist/img/ccme_c.jpg" type="image/jpg" rel="icon">-->
+    <link href="https://ccme.org.ma/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+
+</head>
+<body>
+<div class="nav-bar">
+    <div class="logo-icon">
+        <div>LOGO</div>
+        <!--<div class="btn"><i class="fa fa-bars" aria-hidden="true" style="font-size: 28px; color: rgb(158, 158, 172);"></i></div>-->
+    </div>
+    <div class="actualite">
+        <div>News</div>
+    </div>
+
+    <div class="sign-in-container">
+        <div class="sign-in">
+            <div><a th:href="@{/register}">SING UP</a></div>
+            <div><a th:href="@{/login}">SING IN</a></div>
+        </div>
+    </div>
+</div>
+<div class="btn">
+    <span class="fa fa-bars"></span>
+</div>
+<nav class="sidebar">
+    <div class="text">Menu</div>
+    <ul>
+        <li class="active"><a href="#">Home</a></li>
+        <li>
+            <a href="#" class="feat-btn">Informations
+                <span class="fas fa-caret-down first"></span>
+            </a>
+            <ul class="feat-show">
+                <li><a href="#">News</a></li>
+                <li><a href="#">In my region</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#" class="serv-btn">Services
+                <span class="fas fa-caret-down second"></span>
+            </a>
+            <ul class="serv-show">
+                <li><a href="#">Look for opportunities</a></li>
+                <li><a href="#">Personnal space</a></li>
+                <li><a href="#">Deposit my CV</a></li>
+                <li><a href="#">Trainings</a></li>
+                <li><a href="#">Find events</a></li>
+                <li><a href="">Discover job market</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Sign up</a></li>
+    </ul>
+</nav>
+
+<div class="img" style="background-image: url(dist/img/mm.jpg);"></div>
+<div class="background">
+
+</div>
+<div class="background-2">
+    <div class="about-us">
+        Our history
+    </div>
+    <div class="about-us">
+        Our Heritage
+    </div>
+    <div class="about-us">
+        Our Know-how
+    </div>
+    <div class="about-us">
+        Donation projects
+    </div>
+    <div class="about-us">
+        Associations
+    </div>
+    <div class="about-us">
+        Art and Culture
+    </div>
+</div>
+<div class="welcome" style="position: absolute; top: 50%; left: 50%; text-align: center;   transform: translate(-50%, -50%);      font-size: 7em; color: white;">
+    Welcome
+</div>
+
+<div class="content" >
+    <div class="two">
+        <div class="hub">
+            <div class="title"><span>Hub Technologies</span></div>
+            <div class="hub-img3"></div>
+            <div>
+                <ul>
+                    <li><i class="fas fa-caret-right"></i>Innovate</li>
+                    <li><i class="fas fa-caret-right"></i>Optimize</li>
+                    <li><i class="fas fa-caret-right"></i>Modernize</li>
+                </ul>
+            </div>
+        </div>
+        <div class="hub">
+            <div class="title"><span>Hub Entrepreneurship</span></div>
+            <div class="hub-img2"></div>
+            <div>
+                <ul>
+                    <li><i class="fas fa-caret-right"></i>Invest</li>
+                    <li><i class="fas fa-caret-right"></i>Look for Peers</li>
+                    <li><i class="fas fa-caret-right"></i>Look for a job</li>
+                    <li><i class="fas fa-caret-right"></i>Boost up my start up</li>
+                    <li><i class="fas fa-caret-right"></i>Look for financement</li>
+                    <li><i class="fas fa-caret-right"></i>Look for market</li>
+                    <li><i class="fas fa-caret-right"></i>Find suppliers</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="hub">
+            <div class="title"> <span>Hub Skills</span></div>
+            <div class="hub-img1"></div>
+            <div>
+                <ul>
+                    <li><i class="fas fa-caret-right"></i>Deposit my CV</li>
+                    <li><i class="fas fa-caret-right"></i><a href="http://localhost:8080">Offer conferences</a></li>
+                    <li><i class="fas fa-caret-right"></i>Mooks cours</li>
+                    <li><i class="fas fa-caret-right"></i>Look for peers</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="footer" >
+    <div class="footer-1">
+        <div class="user">
+            <div class="type"><span class="fas fa-angle-right"></span> Candidat</div>
+            <div class="infos">
+                <div>Look for opportunities</div>
+                <div>Make contact</div>
+                <div>Discover job market</div>
+            </div>
+
+        </div>
+        <div class="user">
+            <div class="type"><span class="fas fa-angle-right"></span> Provider</div>
+            <div class="infos">
+                <div>Share your experience</div>
+                <div>Find new ideas</div>
+                <div>Look for profils</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-2">
+        <div class="contactus">
+            Contact Us
+        </div>
+        <span class="contact"><i class="fas fa-map-marker-alt"></i>Rabat, MAR</span>
+        <span class="contact"><i class="fas fa-phone-alt"></i>+212 612121212</span>
+        <span class="contact"><i class="far fa-envelope"></i>contact@gmail.com</span>
+    </div>
+</div>
+
+<script>
+    $('.btn').click(function(){
+        $(this).toggleClass("click");
+        $('.sidebar').toggleClass("show");
+    });
+    $('.feat-btn').click(function(){
+        $('nav ul .feat-show').toggleClass("show");
+        $('nav ul .first').toggleClass("rotate");
+    });
+    $('.serv-btn').click(function(){
+        $('nav ul .serv-show').toggleClass("show1");
+        $('nav ul .second').toggleClass("rotate");
+    });
+    $('nav ul li').click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+    });
+</script>
+</body>
+</html>

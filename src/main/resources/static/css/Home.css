@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.nav-bar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: large;
+    border-bottom: 3px solid black;
+}
+
+.nav-bar .sign-in-container{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+    margin-right: 50px;
+    width: 10%;
+}
+.btn{
+    position: absolute;
+    top: 15px;
+    left: 260px;
+
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    background: #1b1b1b;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: left 0.4s ease;
+}
+
+.btn span{
+    color: white;
+    font-size: 28px;
+    line-height: 45px;
+}
+.btn.click span:before{
+    content: '\f00d';
+}
+.sidebar{
+    position: absolute;
+    width: 380px;
+    left: -380px;
+    background: #f1f1f1;
+    transition: left 0.4s ease;
+}
+.sidebar.show{
+    left: 0px;
+}
+.sidebar .text{
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 65px;
+    text-align: center;
+    background: #f1f1f1;
+    letter-spacing: 1px;
+}
+nav ul{
+    background: #f1f1f1;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+nav ul li{
+    line-height: 60px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+nav ul li:last-child{
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+nav ul li a{
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 40px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+nav ul li.active a{
+    color: black;
+    background: #d3d0d0;
+    border-left-color: black;
+}
+nav ul li a:hover{
+    background: #d3d0d0;
+}
+nav ul ul{
+    position: static;
+    display: none;
+}
+nav ul .feat-show.show{
+    display: block;
+}
+nav ul .serv-show.show1{
+    display: block;
+}
+nav ul ul li{
+    line-height: 42px;
+    border-top: none;
+}
+nav ul ul li a{
+    font-size: 17px;
+    color: black;
+    padding-left: 80px;
+}
+nav ul li.active ul li a{
+    color: black;
+    background: #f1f1f1;
+    border-left-color: transparent;
+}
+nav ul ul li a:hover{
+    color: black!important;
+    background: #d3d0d0!important;
+}
+nav ul li a span{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: transform 0.4s;
+}
+nav ul li a span.rotate{
+    transform: translateY(-50%) rotate(-180deg);
+}
+.sign-in{
+    display: flex;
+    align-items: center;
+}
+.sign-in div{
+    cursor: pointer;
+}
+.dropdown{
+    position: absolute;
+    top: 12%;
+    right: 2%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(219, 219, 219);
+    display: none;
+    transition: right 0.8s ease;
+    border-style: none;
+    border-radius: 10px;
+}
+.dropdown li{
+    list-style: none;
+}
+
+ul li div {
+    padding: 10px;
+    border-bottom: 1px solid rgb(245, 245, 245);
+    border-collapse: collapse;
+    width: 150px;
+
+}
+ul li div:hover {
+    background-color: rgb(228, 228, 228);
+}
+
+.nav-bar .logo-icon{
+    display: flex;
+    width: 10%;
+    justify-content: space-between;
+    margin-left: 50px;
+    align-items: center;
+}
+
+.content{
+    width: 70%;
+    display: flex;
+    margin: 20px auto;
+    flex-direction: column;
+}
+
+
+.two{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 60px;
+}
+
+.hub{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(146, 182, 230);
+    width: auto;
+    height: 550px;
+
+}
+
+
+.title{
+    background-color: rgb(97, 105, 170);
+    color: white;
+    padding: 15px;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+    color: white;
+}
+ul li:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+.hub-img1{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRt-2frDnI1LAIIua8xzO5P2RztbxU8Jt2m5A&usqp=CAU');
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+}
+
+.hub-img2{
+    background-image: url('https://media-exp1.licdn.com/dms/image/C4D12AQHxzs8BJFiF5g/article-cover_image-shrink_600_2000/0?e=2159024400&v=beta&t=h9kR4k8ColgaPxorApfdqnCFWbGZO-rNQXJ490tA1i8');
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+}
+.hub-img3{
+    background-image: url('https://mediacloud.kiplinger.com/image/private/s--aD8885l6--/v1595525745/Investing/best-artificial-intelligence-etfs.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+}
+
+
+
+.img{
+    /*background-image: url('https://www.asap.bg/uploads/images/fly.png');*/
+    background-image: url(images/nature_3.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+}
+
+.fa-caret-right{
+    color: white;
+    margin-right: 5px;
+}
+
+.background{
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    height: 200px;
+    top: 580px;
+    position: absolute;
+}
+
+.about-us{
+    background-color: rgb(238, 202, 103);
+    text-align: center;
+    border-radius: 50%;
+    width: 140px;
+    line-height: 140px;
+    height: 140px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.about-us:hover{
+    background-color: rgb(240, 215, 147);
+}
+
+.background-2{
+    width: 100%;
+    height: 200px;
+    top: 580px;
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.footer{
+    width: 100%;
+    height: 200px;
+    border-top: 3px solid black;
+    display: flex;
+}
+
+.footer-1{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+}
+
+.user .type{
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.user .infos{
+    margin-left: 30px;
+}
+.infos div {
+    padding: 5px;
+}
+
+.footer-2{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+
+}
+
+.contactus{
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.contact{
+    padding: 5px;
+}
+
+.contact i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+

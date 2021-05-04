@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" style="background: #f5d7d7">
+<head>
+    <title>CCME</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/register1.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <!-- Font special for pages-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://ccme.org.ma/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+
+
+    <!--===============================================================================================->
+        <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <!-===============================================================================================->
+        <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-===============================================================================================->
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-===============================================================================================->
+        <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!-===============================================================================================->
+        <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!-===============================================================================================->
+        <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!-===============================================================================================->
+        <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!-===============================================================================================->
+        <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!-===============================================================================================->
+        <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <!-===============================================================================================->
+        <link rel="stylesheet" type="text/css" href="css/util.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-===============================================================================================-->
+</head>
+<body >
+<!--<body style="background: #cce5ff;">-->
+
+<div class="limiter ">
+    <div class="containerlogin100">
+
+
+
+        <div class="wraplogin100" style="background-image: url(images/p1.jpg);">
+            <form class="login100 validate-form" style="background: #f5d7d7;background-color: rgba(255, 255, 255, 0.5);"  action="#" th:action="@{/DomainSaveAdmin}" th:object="${Domain}" method="POST" >
+					<span class="login100-form-title p-b-43" style="color: #cf3021;">
+						Proposer Un Domain
+					</span>
+
+                <div class="cont">
+                    <a th:href="@{/ThemeID}" class="userdes">User</a>
+                    <div class="adminactiv">Admin</div>
+                    <!------------------->
+                    <!--  <div class="admindes">Admin</div>
+                      <div class="useractiv">User</div>-->
+                </div>
+
+                <div class="wrap">
+                    <div class="input-group ">
+                        <input class="inpp"   name="Domain"  type="text" th:field="*{Domain}"  placeholder="Domain">
+                        <span class="focus-input100" ></span>
+                    </div>
+                </div>
+<!--                <div class="ajout">Ajouter</div>-->
+
+                <div class="select-box">
+
+                    <div class="options ">
+                        <div class="do ">Domain disponible</div>
+                        <div  class="col-md-12"th:each="d :${Domains}">
+<!--                            <div class="doS op" th:text="${d.Domain}"></div><div class="cancel">+</div>-->
+                            <div class="but"><div class="doS op" th:text="${d.Domain}"></div><div class="cancel">+</div></div>
+                        </div>
+                    </div>
+                </div>
+                <button class="ajout" type="submit" style="margin-top: 20px">Ajouter</button>
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="wrap-login100" style="background-image: url(images/p6.jpg);">
+            <form class="login100-form validate-form"style="background-color: rgba(245, 0, 0, 0.5);">
+					<span class="login100-form-title p-b-43" style="color: #3b3938;">
+						Proposer votre Theme
+					</span>
+
+
+                <div class="zone" id="imagePreview">
+                    <img   alt="" class="image-preview__image">
+                    <input type="file" id="inpFile" name="files[]" >
+                    <div id="dropZ">
+                        <label class="image" for="inpFile"><i  id="drag" class="fa fa-cloud-upload"></i></label>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="wrap">
+                    <div class="input-group">
+                        <input class="inpp" type="name"  name="name" placeholder="Nom & Prenom" >
+                        <span class="focus-input100" ></span>
+                    </div>
+                </div>
+
+
+                <div class="wrap">
+                    <div class="input-group selected">
+                        <input class="inpp" type="name"  name="domain" placeholder="Domain" >
+                        <span class="focus-input100" ></span>
+                    </div>
+                </div>
+                <div class="select-box">
+
+                    <div class="options-container ">
+                        <div class="dom ">Domain disponible</div>
+                        <div  class="col-md-12" th:each="d :${Domains}">
+                            <div class="domS option" th:text="${d.Domain}"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="input-group">
+                        <input class="inpp" type="name"  name="description" placeholder="Description" >
+                        <span class="focus-input100" ></span>
+                    </div>
+                </div>
+
+
+
+                <div class="container-login100-form-btn">
+                    <button class="login100-form-btn">
+                        Ajouter
+                    </button>
+                </div>
+            </form><!--  arevoir -->
+        </div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+<!--===============================================================================================->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!-===============================================================================================->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!-===============================================================================================->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!-===============================================================================================->
+	<script src="vendor/select2/select2.min.js"></script>
+<!-===============================================================================================->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!-===============================================================================================->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!-===============================================================================================-->
+<script src="js/theme.js"></script>
+
+</body>
+</html>

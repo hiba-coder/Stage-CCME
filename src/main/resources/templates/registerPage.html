@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>CCME</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://ccme.org.ma/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+
+    <link rel="stylesheet" href="css/register.css">
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+    <style>
+        .image-preview{
+            margin-left: 50px;
+        }
+        .button{
+            margin-left: 120px;
+        }
+    </style>
+
+
+
+
+</head>
+<body class="body">
+
+<div class="container">
+    <form action="#" th:action="@{/CreateAccount}" th:object="${person}" method="POST" enctype="multipart/form-data">
+
+
+    <div id="ele1" class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+<!--                    <form method="POST">-->
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="labe">full name</label>
+                                    <input class="input--style-4" type="text" th:field="*{fullName}" name="fullName">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="labe">user name</label>
+                                    <input class="input--style-4" id="userName" type="text" th:field="*{userName}" name="userName">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="labe">Birthday</label>
+                                    <div class="input-group-icon">
+                                        <input class="input--style-4 js-datepicker" type="text" name="birthday">
+                                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="labe">Gender</label>
+                                    <div class="p-t-10">
+                                        <label class="radio-container m-r-45 labe">Male
+                                            <input type="radio" checked="checked" name="gender">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container labe">Female
+                                            <input type="radio" name="gender">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="labe">Email</label>
+                                    <input class="input--style-4" type="email" th:field="*{email}" name="email">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="labe">Password</label>
+                                    <input class="input--style-4" type="text" th:field="*{password}" name="password">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-t-15">
+                            <!--                            <button class="btn btn&#45;&#45;radius-2 btn&#45;&#45;blue" type="submit">Submit</button>-->
+                            <div id="butt" class="cle"> Suivant </div>
+                        </div>
+<!--                    </form>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="ele2" class="avatar-upload">
+        <p style="color:white; text-align: center; font-size: medium;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin-top: 10px; " > Ajouter Une Photo </p>
+<!--        <form action="#" th:action="@{/CreateAccount}" th:object="${person}" method="POST" enctype="multipart/form-data">-->
+            <div class="image-preview" id="imagePreview" >
+                <img  src="images/innconue.png" alt="" class="image-preview__image">
+<!--                <input type="file"  name="inpFile" id="inpFile" accept=".png, .jpg, .jpeg">-->
+                <input type="file"  name="file" id="inpFile" accept=".png, .jpg, .jpeg">
+                <div class="avatar-edit"  >
+
+                    <label class="image" for="inpFile"><i class="glyphicon glyphicon-pencil"></i></label>
+
+                </div>
+
+            </div >
+            <button class="button" type="submit" onclick="registration()"> save </button>
+<!--        </form>-->
+    </div>
+    </form>
+</div>
+
+
+
+
+<script src="js/register.js" ></script>
+<script src="js/chat.js" ></script>
+
+</body>
+</html>

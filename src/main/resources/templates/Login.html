@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>CCME</title>
+    <meta name="description" content="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="css/login.css">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <!--<link href="dist/css/lib/bootstrap.min.css" type="text/css" rel="stylesheet">-->
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <!-- Swipe core CSS -->
+    <!--    <link href="dist/css/swipe.min.css" type="text/css" rel="stylesheet">-->
+    <link href="css/swipe.min.css" type="text/css" rel="stylesheet">
+    <!-- Favicon -->
+    <link href="https://ccme.org.ma/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+
+
+
+    <meta name="description" content="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/lib/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <!-- Swipe core CSS -->
+    <link href="dist/css/swipe.min.css" type="text/css" rel="stylesheet">
+    <!-- Favicon -->
+    <!-- Favicon -->
+    <link href="dist/img/ccme_c.jpg" type="image/jpg" rel="icon"></head>
+<body class="body">
+<div class="container">
+
+    <div class="col-md-12">
+        <div class="sing">
+            <h1 style="color:white">Sign in </h1>
+            <div class="third-party">
+                <button class="btn item bg-blue">
+                    <i class="material-icons">pages</i>
+                </button>
+                <button class="btn item bg-teal">
+                    <i class="material-icons">party_mode</i>
+                </button>
+                <button class="btn item bg-purple">
+                    <i class="material-icons">whatshot</i>
+                </button>
+            </div>
+            <form th:action="@{/login}" method="post">
+                <div class="form-group">
+                    <input type="text" id="inputEmail" name="userName" class="forme"  placeholder="User Name" required>
+                    <button class="btn icon"><i class="material-icons"></i></button>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="inputPassword" name="password" class="forme"  placeholder="Password" required>
+                    <button class="btn icon"><i class="material-icons"></i></button>
+                </div>
+                <button type="submit" class="cle" >Sign In</button>
+                <br>
+
+            </form>
+            <button type="submit" class="cle" formaction="index-2.html">Sign Up</button>
+        </div>--
+    </div>
+
+</div>
+<!-- Bootstrap core JavaScript
+		================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="dist/js/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="dist/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="dist/js/vendor/popper.min.js"></script>
+<script src="dist/js/bootstrap.min.js"></script>
+</body>
+</html>

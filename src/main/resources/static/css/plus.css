@@ -1,0 +1,447 @@
+.body{
+    /*background:url("https://i2.wp.com/greensaroundtheworld.com/wp-content/uploads/2017/03/denys-nevozhai-185489.jpg?fit=2992%2C3992");*/
+    /*background: #cce5ff;*/
+
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*-o-background-size: cover;*/
+
+
+}
+
+.PrpT{
+    /*background: #2f3640;*/
+    /*background: #117a8b;*/
+    border-radius: 8px;
+    margin-bottom: 8px;
+    /*width:  200px;*/
+    margin-top: 20px;
+    /*color: #f5f6fa;*/
+    position: relative;
+    padding:12px 24px;
+    cursor: pointer;
+
+    order:0;
+}
+
+.select-box{
+    display : flex ;
+    width: 4000px;
+    /*margin-left: 12000px;*/
+    /*padding-left: 2000px;*/
+    margin-top: 20px;
+    /*flex-direction: column;*/
+}
+.select-box .options-container{
+    /*background: #2f3640;*/
+    background-color: rgba(0,0,0,0.3) !important;
+    color: #f5f6fa;
+    max-height: 0;
+    width : 100%;
+    opacity: 0;
+
+   /* transition: all 0.4s;*/
+    border-radius: 8px;
+    overflow: hidden;
+    /*order: 1;*/
+}
+.selected{
+
+    /*background: #2f3640;*/
+    background: #cf3021;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    width:  200px;
+    margin-top: 20px;
+    color: #f5f6fa;
+    position: relative;
+
+    order:0;
+}
+.selected::after{
+    content: "";
+    background: url('https://raw.githubusercontent.com/Godsont/Custom-Select-Box/3aff3bdcd46e450b9291e017df8ac80bcd2a5169/img/arrow-down.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position:absolute;
+    height: 100%;
+    width: 32px;
+    right: 10px;
+    top: 5px;
+
+    transition: all 0.4s;
+
+}
+.select-box .options-container.active{
+    max-height: 240px;
+    /*max-height: 540px;*/
+    opacity: 1;
+    overflow-y: scroll;
+    width: 800px;
+}
+.select-box .options-container.active  .selected::after{
+    transform: rotateX(180deg);
+    top: -6px;
+}
+.select-box .options-container::-webkit-scrollbar{
+    width: 8px;
+    background: #0d141f;
+    border-radius: 0 8px 8px 0;
+}
+.select-box .options-container::-webkit-scrollbar-thumb{
+    background: #525861;
+    border-radius: 0 8px 8px 0;
+}
+.select-box .option,
+.selected{
+    padding:12px 24px;
+    cursor: pointer;
+}
+.select-box .option:hover{ /* you can remove it */
+    background: #414b57;
+    background-color: rgba(0,0,0,0.3) !important;
+
+}
+.select-box .option .radio{
+    display: none;
+
+}
+
+
+/**---------------------------------------1--------------------------------------*/
+
+.select-boxx{
+    display : flex ;
+    width: 4000px;
+    margin-top: 20px;
+
+}
+.select-boxx .options-containerr{
+    /*background: #2f3640;*/
+    background-color: rgba(0,0,0,0.3) !important;
+    color: #f5f6fa;
+    max-height: 0;
+    width : 100%;
+    opacity: 0;
+
+    transition: all 0.4s;
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+.selectedd{
+    /*background: #2f3640;*/
+    background: #cf3021;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    width:  200px;
+    margin-top: 20px;
+    color: #f5f6fa;
+    position: relative;
+
+    order:0;
+}
+.selectedd::after{
+    content: "";
+    background: url('https://raw.githubusercontent.com/Godsont/Custom-Select-Box/3aff3bdcd46e450b9291e017df8ac80bcd2a5169/img/arrow-down.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position:absolute;
+    height: 100%;
+    width: 32px;
+    right: 10px;
+    top: 5px;
+
+    transition: all 0.4s;
+
+}
+.select-boxx .options-containerr.activee{
+    max-height: 240px;
+    opacity: 1;
+    overflow-y: scroll;
+    width: 800px;
+
+}
+.select-boxx .options-containerr.activee  .selectedd::after{
+    transform: rotateX(180deg);
+    top: -6px;
+}
+.select-boxx .options-containerr::-webkit-scrollbar{
+    width: 8px;
+    background: #0d141f;
+    border-radius: 0 8px 8px 0;
+}
+.select-boxx .options-containerr::-webkit-scrollbar-thumb{
+    background: #525861;
+    border-radius: 0 8px 8px 0;
+}
+.select-boxx .optionn,
+.selectedd{
+    padding:12px 24px;
+    cursor: pointer;
+}
+.select-boxx .optionn:hover{
+    background: #414b57;
+    background-color: rgba(0,0,0,0.3) !important;
+}
+.select-boxx .optionn .radioo{
+    display: none;
+
+}
+/**************************************************************************************************/
+
+
+/**----------------------------------------2----------------------------------**/
+
+.select-box2{
+    display : flex ;
+    width: 4000px;
+    margin-top: 20px;
+
+}
+.select-box2 .options-container2{
+    /*background: #2f3640;*/
+    background-color: rgba(0,0,0,0.3) !important;
+    color: #f5f6fa;
+    max-height: 0;
+    width : 100%;
+    opacity: 0;
+
+    transition: all 0.4s;
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+.selected2{
+    /*background: #2f3640;*/
+    background: #cf3021;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    width:  200px;
+    margin-top: 20px;
+    color: #f5f6fa;
+    position: relative;
+
+    order:0;
+}
+.selected2::after{
+    content: "";
+    background: url('https://raw.githubusercontent.com/Godsont/Custom-Select-Box/3aff3bdcd46e450b9291e017df8ac80bcd2a5169/img/arrow-down.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position:absolute;
+    height: 100%;
+    width: 32px;
+    right: 10px;
+    top: 5px;
+
+    transition: all 0.4s;
+
+}
+.select-box2 .options-container2.active2{
+    max-height: 240px;
+    opacity: 1;
+    overflow-y: scroll;
+    width: 800px;
+
+}
+.select-box2 .options-container2.active2  .selected2::after{
+    transform: rotateX(180deg);
+    top: -6px;
+}
+.select-box2 .options-container2::-webkit-scrollbar{
+    width: 8px;
+    background: #0d141f;
+    border-radius: 0 8px 8px 0;
+}
+.select-box2 .options-container2::-webkit-scrollbar-thumb{
+    background: #525861;
+    border-radius: 0 8px 8px 0;
+}
+.select-box2 .option2,
+.selected2{
+    padding:12px 24px;
+    cursor: pointer;
+}
+.select-box2 .option2:hover{
+    background: #414b57;
+    background-color: rgba(0,0,0,0.3) !important;
+}
+.select-box2 .option2 .radio2{
+    display: none;
+
+}
+/******************************************************************************************************/
+
+/**---------------------------------------------------3--------------------------------------------------*/
+
+.select-box3{
+    display : flex ;
+    width: 4000px;
+    margin-top: 20px;
+
+}
+.select-box3 .options-container3{
+    /*background: #2f3640;*/
+    background-color: rgba(0,0,0,0.3) !important;
+    color: #f5f6fa;
+    max-height: 0;
+    width : 100%;
+    opacity: 0;
+
+    transition: all 0.4s;
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+.selected3{
+    /*background: #2f3640;*/
+    background: #cf3021;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    width:  200px;
+    margin-top: 20px;
+    color: #f5f6fa;
+    position: relative;
+
+    order:0;
+}
+.selected3::after{
+    content: "";
+    background: url('https://raw.githubusercontent.com/Godsont/Custom-Select-Box/3aff3bdcd46e450b9291e017df8ac80bcd2a5169/img/arrow-down.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position:absolute;
+    height: 100%;
+    width: 32px;
+    right: 10px;
+    top: 5px;
+
+    transition: all 0.4s;
+
+}
+.select-box3 .options-container3.active3{
+    max-height: 240px;
+    opacity: 1;
+    overflow-y: scroll;
+    width: 800px;
+
+}
+.select-box3 .options-container3.active3  .selected3::after{
+    transform: rotateX(180deg);
+    top: -6px;
+}
+.select-box3 .options-container3::-webkit-scrollbar{
+    width: 8px;
+    background: #0d141f;
+    border-radius: 0 8px 8px 0;
+}
+.select-box3 .options-container3::-webkit-scrollbar-thumb{
+    background: #525861;
+    border-radius: 0 8px 8px 0;
+}
+.select-box3 .option3,
+.selected3{
+    padding:12px 24px;
+    cursor: pointer;
+}
+.select-box3 .option3:hover{
+    background: #414b57;
+    background-color: rgba(0,0,0,0.3) !important;
+}
+.select-box3 .option3 .radio3{
+    display: none;
+
+}
+/*********************************************************************************************************/
+
+/**------------------------------------------------4------------------------------------------**/
+.select-box4{
+    display : flex ;
+    width: 4000px;
+    margin-top: 20px;
+
+}
+.select-box4 .options-container4{
+    /*background: #2f3640;*/
+    background-color: rgba(0,0,0,0.3) !important;
+    color: #f5f6fa;
+    max-height: 0;
+    width : 100%;
+    opacity: 0;
+
+    transition: all 0.4s;
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+.selected4{
+    /*background: #2f3640;*/
+    background: #cf3021;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    width:  200px;
+    margin-top: 20px;
+    color: #f5f6fa;
+    position: relative;
+
+    order:0;
+}
+.selected4::after{
+    content: "";
+    background: url('https://raw.githubusercontent.com/Godsont/Custom-Select-Box/3aff3bdcd46e450b9291e017df8ac80bcd2a5169/img/arrow-down.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position:absolute;
+    height: 100%;
+    width: 32px;
+    right: 10px;
+    top: 5px;
+
+    transition: all 0.4s;
+
+}
+.select-box4 .options-container4.active4{
+    max-height: 240px;
+    opacity: 1;
+    overflow-y: scroll;
+    width: 800px;
+
+}
+.select-box4 .options-container4.active4  .selected4::after{
+    transform: rotateX(180deg);
+    top: -6px;
+}
+.select-box4 .options-container4::-webkit-scrollbar{
+    width: 8px;
+    background: #0d141f;
+    border-radius: 0 8px 8px 0;
+}
+.select-box4 .options-container4::-webkit-scrollbar-thumb{
+    background: #525861;
+    border-radius: 0 8px 8px 0;
+}
+.select-box4 .option4,
+.selected4{
+    padding:12px 24px;
+    cursor: pointer;
+}
+.select-box4 .option4:hover{
+    background: #414b57;
+    background-color: rgba(0,0,0,0.3) !important;
+}
+.select-box4 .option4 .radio4{
+    display: none;
+
+}
+/*********************************************************************************************/
+
